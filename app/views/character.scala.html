@@ -1,0 +1,9 @@
+@(c: Character)
+
+<img src="@routes.Assets.at(s"images/armory/classes/class_${c.charClass.id}.png")"></img>
+
+@c.charClass.spec.map { s =>
+    <img src="@routes.Assets.at(s"images/armory/specs/spec_$s.png")"></img>
+}
+
+<span>@c.name</span> - <span>@c.realm.slug</span>

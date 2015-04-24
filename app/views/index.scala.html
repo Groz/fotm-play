@@ -1,0 +1,10 @@
+@(message: String, chars: List[Character])
+
+@main("FotM") {
+
+    <span>@message</span>
+
+    @for(c <- chars) {
+        <br>@character(c)</br>
+    }
+}
