@@ -13,5 +13,6 @@ libraryDependencies ++= Seq(
   ws
 )
 
+pipelineStages := Seq(gzip)
 
 fork in run := true

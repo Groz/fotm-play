@@ -1,10 +1,9 @@
-@(message: String, chars: List[Character])
+@(message: String, teams: List[Team], setups: List[Setup])
 
 @main("FotM") {
 
-    <span>@message</span>
+    <h1>@message</h1>
 
-    @for(c <- chars) {
-        <br>@character(c)</br>
-    }
+    @teamsView(teams)
+    @setupsView(setups)
 }
